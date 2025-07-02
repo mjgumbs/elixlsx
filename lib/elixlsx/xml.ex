@@ -1,8 +1,8 @@
 defmodule Elixlsx.XML do
   @xml_chars_block_1 [9, 10, 13]
-  @xml_chars_block_2 32..55_295
-  @xml_chars_block_3 57_344..65_533
-  @xml_chars_block_4 65_536..1_114_111
+  @xml_chars_block_2 32..55_295//1
+  @xml_chars_block_3 57_344..65_533//1
+  @xml_chars_block_4 65_536..1_114_111//1
 
   # From the xml spec 1.0: https://www.w3.org/TR/REC-xml/#charsets
   # Character Range

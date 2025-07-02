@@ -333,7 +333,7 @@ defmodule Elixlsx.XMLTemplates do
 
   defp xl_sheet_rows(data, row_heights, grouping_info, wci) do
     rows =
-      Enum.zip(data, 1..length(data))
+      Enum.zip(data, 1..length(data)//1)
       |> Enum.map_join(fn {row, rowidx} ->
         """
         <row r="#{rowidx}" #{get_row_height_attr(row_heights, rowidx)}#{get_row_grouping_attr(grouping_info, rowidx)}>

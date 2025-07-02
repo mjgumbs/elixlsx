@@ -1,6 +1,6 @@
 defmodule Elixlsx.Util do
   alias Elixlsx.XML
-  @col_alphabet Enum.to_list(?A..?Z)
+  @col_alphabet Enum.to_list(?A..?Z//1)
 
   @doc ~S"""
   Returns the column letter(s) associated with a column index.
